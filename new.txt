@@ -1,0 +1,63 @@
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test
+$ git init
+Initialized empty Git repository in E:/MyGit/git_test/.git/
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git add .
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '唐敏宇@▒▒▒▒▒▒▒С▒▒air14.(none)')
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git config --global user.name "tmy"
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git config --global user.email my.tang.shfx@sjtu.edu.cn
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git commit -m "initial commit"
+[master (root-commit) c6e7ae1] initial commit
+ 2 files changed, 36 insertions(+)
+ create mode 100644 problems.txt
+ create mode 100644 prp.txt
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git remote add origin https://github.com/lazurite12138/github_test.git
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+fatal: unable to access 'https://github.com/lazurite12138/github_test.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/lazurite12138/github_test.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git push -u origin master^C
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git log
+commit c6e7ae17c5486c573a4bf0a0a153d327acb2a28b (HEAD -> master)
+Author: tmy <my.tang.shfx@sjtu.edu.cn>
+Date:   Thu Jan 27 17:57:01 2022 +0800
+
+    initial commit
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git remote add origin gits://github.com/lazurite12138/github_test.git
+error: remote origin already exists.
+
+唐敏宇@▒▒▒▒▒▒▒С▒▒air14 MINGW64 /e/mygit/git_test (master)
+$ git remote add origin gits://github.com/lazurite12138/github_test.git
